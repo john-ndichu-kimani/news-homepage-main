@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+body{
+    font-family: 'inter';
+    background-color: hsl(36, 100%, 99%);
+}
+
+.container{
+    width: 75vw;
+    height: 80vh;
+    margin: 10px auto;
+    
+    
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+display: flex;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+    padding-left: 30px;
+}
+.menu{
+    display: none;
+}
+.content-wrapper{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "b b h"
+    "br r h"
+    "c1 c2 c3"
+    ;  
+}
+.banner{   
+    
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: b;
+}
+.headlines{
+    background:hsl(240, 100%, 5%);
+    padding-left: 10px;
+    grid-area: h;
+}
+.headlines h2{
+    color:  hsl(35, 77%, 62%);
+    
+}
+ h3{
+    font-size: 16px;
+    color: hsl(36, 100%, 99%);
+}
+p{  
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+.headline1,.headline2{  
+  
+    margin: 25px 0;
+    border-bottom: solid hsl(236, 13%, 42%) .1px;;
+}
+
+.btn{
+    
+    text-decoration: none;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    padding: .8rem 1.6rem ;
+    border-radius: .5px;  
+}
+
+.bright{
+grid-area: br;
+}
+.future-text{
+    color:  hsl(240, 100%, 5%);
+}
+.read-more{
+    grid-area: r;
+     
+}
+.read-more p{
+    padding-bottom:20px;
+}
+.card1,.card2,.card3{
+    
+  display: flex;
+
+}
+.card-img{
+    height: 18vh;
+    width: 18vh;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    padding-left: 15px;
+}
+
+.card1{
+grid-area: c1;
+}
+.card2{
+    grid-area: c2;
+}
+.card3{
+    grid-area: c3;
+}
